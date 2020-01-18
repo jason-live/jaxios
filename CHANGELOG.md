@@ -1,3 +1,14 @@
+## [1.6.2](https://github.com/jason-live/jaxios/compare/v1.5.12...v1.6.2) (2020-01-18)
+
+
+### Features
+
+* :sparkles: 处理超时错误 ([83ce6c2](https://github.com/jason-live/jaxios/commit/83ce6c2cb0b2518695520abae4dc72c83c0d87cb))
+* :sparkles: 处理非 200 异常 ([c0b4533](https://github.com/jason-live/jaxios/commit/c0b45332c8393e920ad7b80dcc749a85e9c9bd4b))
+* :sparkles: 错误 demo ([2f708a3](https://github.com/jason-live/jaxios/commit/2f708a30b8a2fdeb960ef85eb5a4f99b6552e8b9))
+
+
+
 ## [1.5.12](https://github.com/jason-live/jaxios/compare/v1.5.11...v1.5.12) (2020-01-18)
 
 
