@@ -1,3 +1,12 @@
+## [1.5.2-beta.1](https://github.com/jason-live/jaxios/compare/v1.5.2...v1.5.2-beta.1) (2020-01-18)
+
+
+### Features
+
+* :sparkles: 优化 util 的 isData 和 isObject 的返回方式，增加类型保护 ([1f5e153](https://github.com/jason-live/jaxios/commit/1f5e153ba340b26d85af524a5dfbb02618ddedf7))
+
+
+
 ## [1.5.2](https://github.com/jason-live/jaxios/compare/v1.4.7...v1.5.2) (2020-01-18)
 
 
