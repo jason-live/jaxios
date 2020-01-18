@@ -6,7 +6,7 @@ import { isPlainObject } from './util'
  * @param headers
  * @param normalizedName
  */
-function normalizeHeaderName(headers: any, normalizedName: string) {
+function normalizeHeaderName(headers: any, normalizedName: string): void {
   if (!headers) return
   Object.keys(headers).forEach((name) => {
     if (name !== normalizedName && name.toUpperCase() === normalizedName.toUpperCase()) {
@@ -28,4 +28,5 @@ function processHeaders(headers: any, data: any): any {
       headers['Content-Type'] = 'application/jason;charset=utf-8'
     }
   }
+  return headers
 }
