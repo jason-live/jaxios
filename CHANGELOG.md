@@ -1,3 +1,17 @@
+## [1.4.7](https://github.com/jason-live/jaxios/compare/v1.4.6...v1.4.7) (2020-01-18)
+
+
+### Bug Fixes
+
+* :bug: 修复 AxiosRequestConfig data、params参数 必选问题 ([db9f6d3](https://github.com/jason-live/jaxios/commit/db9f6d38570d7533d0ac2583bde3021c13ca06c8))
+
+
+### Features
+
+* :sparkles: 新增 examples 目录，初始化 demo 文件 ([ac1e876](https://github.com/jason-live/jaxios/commit/ac1e876a21c7fdf3222db2144b429907f2740c56))
+
+
+
 ## [1.4.6](https://github.com/jason-live/jaxios/compare/v1.4.5-beta.1...v1.4.6) (2020-01-18)
 
 
