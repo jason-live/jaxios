@@ -30,3 +30,25 @@ export function processHeaders(headers: any, data: any): any {
   }
   return headers
 }
+
+/**
+ * 处理 headers 字符串 转为 对象
+ * @param headers
+ */
+export function parseHeaders(headers: string): any {
+  let parsed = Object.create(null)
+  if(!headers) return parsed
+
+  /**
+   * 分解 headers 字符串
+   */
+  headers.split('\r\n').forEach((line) => {
+    let [key, val] = line.split(':')
+    key = key.trim().toLowerCase()
+    if (!key) return
+    if (val) val = val.trim()
+    parsed[key] = val
+  })
+
+  return parsed
+}
