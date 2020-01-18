@@ -1,3 +1,7 @@
+## [1.5.5](https://github.com/jason-live/jaxios/compare/v1.5.4-hotfix.1...v1.5.5) (2020-01-18)
+
+
+
 ## [1.5.4-hotfix.1](https://github.com/jason-live/jaxios/compare/v1.5.4...v1.5.4-hotfix.1) (2020-01-18)
 
 
