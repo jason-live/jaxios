@@ -1,3 +1,12 @@
+## [1.5.12](https://github.com/jason-live/jaxios/compare/v1.5.11...v1.5.12) (2020-01-18)
+
+
+### Features
+
+* :sparkles: transformResponse 函数逻辑实现 ([4264bfa](https://github.com/jason-live/jaxios/commit/4264bfac99d70404b798d760ea467e2b2e5cb654))
+
+
+
 ## [1.5.11](https://github.com/jason-live/jaxios/compare/v1.5.10...v1.5.11) (2020-01-18)
 
 
