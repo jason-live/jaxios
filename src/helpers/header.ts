@@ -21,7 +21,7 @@ function normalizeHeaderName(headers: any, normalizedName: string): void {
  * @param headers
  * @param data
  */
-function processHeaders(headers: any, data: any): any {
+export function processHeaders(headers: any, data: any): any {
   normalizeHeaderName(headers, 'Content-Type');
   if (isPlainObject(data)) {
     if (headers && !headers['Content-Type']){
