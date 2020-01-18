@@ -1,3 +1,13 @@
+## [1.5.10](https://github.com/jason-live/jaxios/compare/v1.5.9...v1.5.10) (2020-01-18)
+
+
+### Features
+
+* :sparkles: 获取响应数据 ([5f4c8f9](https://github.com/jason-live/jaxios/commit/5f4c8f9ec71094c7d3fc58a33585f9963d94cb89))
+* :sparkles: 获取响应数据 demo ([fd9ba2c](https://github.com/jason-live/jaxios/commit/fd9ba2c65f82d121a31c73005ce57501ceefc8fc))
+
+
+
 ## [1.5.9](https://github.com/jason-live/jaxios/compare/v1.5.8...v1.5.9) (2020-01-18)
 
 
