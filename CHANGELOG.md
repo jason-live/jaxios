@@ -1,3 +1,12 @@
+## [1.5.4](https://github.com/jason-live/jaxios/compare/v1.5.3...v1.5.4) (2020-01-18)
+
+
+### Features
+
+* :sparkles: 实现 url 处理逻辑 demo 编写 ([d78fc5e](https://github.com/jason-live/jaxios/commit/d78fc5edd58daa6af3ac7f4ec2ffc116e47671c4))
+
+
+
 ## [1.5.3](https://github.com/jason-live/jaxios/compare/v1.5.2-beta.1...v1.5.3) (2020-01-18)
 
 
