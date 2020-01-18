@@ -42,7 +42,7 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
         config,
         request
       }
-      resolve(response)
+      handleResponse(response)
     }
 
     /**
@@ -79,5 +79,18 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
      * 发送 HTTP 请求
      */
     request.send(data)
+
+    /**
+     * 处理返回异常
+     * @param res
+     */
+    function handleResponse(res: AxiosResponse): void {
+      const { status } = res
+      if (status >=200 && status <= 300) {
+        resolve(res)
+      } else {
+        reject(new Error(`Request failed with status code ${status}`))
+      }
+    }
   })
 }
