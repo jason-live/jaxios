@@ -1,3 +1,14 @@
+## [1.5.2](https://github.com/jason-live/jaxios/compare/v1.4.7...v1.5.2) (2020-01-18)
+
+
+### Features
+
+* :sparkles: 完成 buildUrl 逻辑 ([bb305a1](https://github.com/jason-live/jaxios/commit/bb305a139e1acd288318b2660441a0f6f2370431))
+* :sparkles: 新增 helpers 目录，新增 url 文件 ([37f3003](https://github.com/jason-live/jaxios/commit/37f3003f941a7e699c0920a1a7f36f6cb8ee20a5))
+* :sparkles: 新增 util 文件 ([e7ae42d](https://github.com/jason-live/jaxios/commit/e7ae42d61174de3b4bacbf976fc54d1e3de1032b))
+
+
+
 ## [1.4.7](https://github.com/jason-live/jaxios/compare/v1.4.6...v1.4.7) (2020-01-18)
 
 
