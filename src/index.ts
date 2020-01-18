@@ -1,6 +1,6 @@
 import { AxiosRequestConfig } from './types'
 
-const axios = function(config: AxiosRequestConfig) {
+function axios(config: AxiosRequestConfig) {
   // TODO
 }
 
