@@ -1,3 +1,17 @@
+## [1.4.6](https://github.com/jason-live/jaxios/compare/v1.4.5-beta.1...v1.4.6) (2020-01-18)
+
+
+### Bug Fixes
+
+* :bug: 修复 AxiosRequestConfig 中 data、params 类型 ([f3dccea](https://github.com/jason-live/jaxios/commit/f3dcceadfea0f6edb27a5d5ab52b4addc7d14746))
+
+
+### Features
+
+* :sparkles: 新增 xhr 文件 ([2257d9d](https://github.com/jason-live/jaxios/commit/2257d9d4a5e22d3ec631eeeb51b582e696a35d3a))
+
+
+
 ## [1.4.5-beta.1](https://github.com/jason-live/jaxios/compare/v1.4.5...v1.4.5-beta.1) (2020-01-18)
 
 
