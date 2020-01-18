@@ -32,6 +32,7 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
      */
     request.onreadystatechange = function() {
       if (request.readyState !== 4) return
+      if (request.status === 0) return
       const responseHeaders = parseHeaders(request.getAllResponseHeaders())
       const responseData = responseType !== 'text' ? request.response : request.responseText
       const response: AxiosResponse = {
@@ -48,14 +49,14 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
     /**
      * 执行网络错误
      */
-    request.onerror = function() {
+    request.onerror = function handleError() {
       reject(new Error('Network Error'))
     }
 
     /**
      * 执行超时错误
      */
-    request.ontimeout = function() {
+    request.ontimeout = function handleTimeout() {
       reject(new Error(`Timeout of ${timeout} ms exceeded`))
     }
 
@@ -84,12 +85,11 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
      * 处理返回异常
      * @param res
      */
-    function handleResponse(res: AxiosResponse): void {
-      const { status } = res
-      if (status >=200 && status <= 300) {
-        resolve(res)
+    function handleResponse(response: AxiosResponse): void {
+      if (response.status >= 200 && response.status < 300) {
+        resolve(response)
       } else {
-        reject(new Error(`Request failed with status code ${status}`))
+        reject(new Error(`Request failed with status code ${response.status}`))
       }
     }
   })
