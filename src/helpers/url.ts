@@ -1,3 +1,5 @@
+import { isData, isObject } from './util'
+
 export function encode(val: string) {
   return encodeURIComponent(val)
     .replace(/%40/g, '@')
