@@ -21,7 +21,7 @@ export function buildUrl(url: string, params?: any): string {
   Object.keys(params).forEach((key) => {
     const val = params[key]
 
-    if(val !== null || typeof val === 'undefined') {
+    if(val === null || typeof val === 'undefined') {
       return
     }
 
