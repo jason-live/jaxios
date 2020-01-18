@@ -1,3 +1,12 @@
+## [1.5.7](https://github.com/jason-live/jaxios/compare/v1.5.5...v1.5.7) (2020-01-18)
+
+
+### Features
+
+* :sparkles: processHeaders 函数实现 ([f5d51e8](https://github.com/jason-live/jaxios/commit/f5d51e8b300e58bbd89b372b3e1da768ff61e07c))
+
+
+
 ## [1.5.5](https://github.com/jason-live/jaxios/compare/v1.5.4-hotfix.1...v1.5.5) (2020-01-18)
 
 
