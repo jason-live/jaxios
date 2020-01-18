@@ -1,3 +1,12 @@
+## [1.5.11](https://github.com/jason-live/jaxios/compare/v1.5.10...v1.5.11) (2020-01-18)
+
+
+### Features
+
+* :sparkles: parseHeaders 函数实现 ([3b1aec6](https://github.com/jason-live/jaxios/commit/3b1aec68d1619c89819b0c1a4f9af17007ba694f))
+
+
+
 ## [1.5.10](https://github.com/jason-live/jaxios/compare/v1.5.9...v1.5.10) (2020-01-18)
 
 
