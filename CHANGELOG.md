@@ -1,3 +1,12 @@
+## [1.5.4-hotfix.1](https://github.com/jason-live/jaxios/compare/v1.5.4...v1.5.4-hotfix.1) (2020-01-18)
+
+
+### Bug Fixes
+
+* :bug: 修复 buildURL 处理参数错误问题 ([8539e76](https://github.com/jason-live/jaxios/commit/8539e763c59e5877efcbaddb7f5938ed41ebb7b4))
+
+
+
 ## [1.5.4](https://github.com/jason-live/jaxios/compare/v1.5.3...v1.5.4) (2020-01-18)
 
 
