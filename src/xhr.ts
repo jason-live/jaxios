@@ -2,7 +2,7 @@ import { AxiosRequestConfig, AxiosPromise, AxiosResponse } from './types'
 import { parseHeaders } from './helpers/header'
 
 export default function xhr(config: AxiosRequestConfig): AxiosPromise {
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     /**
      * 结构 config 参数
      */
@@ -36,6 +36,10 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
         request
       }
       resolve(response)
+    }
+
+    request.onerror = function() {
+      reject(new Error('Network Error'))
     }
 
     /**
