@@ -6,7 +6,7 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
     /**
      * 结构 config 参数
      */
-    const { data = null, method = 'get', url, headers, responseType } = config
+    const { data = null, method = 'get', url, headers, responseType, timeout } = config
 
     /**
      * 创建 XMLHttpRequest 对象
@@ -18,6 +18,13 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
      */
     if(responseType) {
       request.responseType = responseType
+    }
+
+    /**
+     * 设置超时时间
+     */
+    if (timeout) {
+      request.timeout = timeout
     }
 
     /**
@@ -38,8 +45,18 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
       resolve(response)
     }
 
+    /**
+     * 执行网络错误
+     */
     request.onerror = function() {
       reject(new Error('Network Error'))
+    }
+
+    /**
+     * 执行超时错误
+     */
+    request.ontimeout = function() {
+      reject(new Error(`Timeout of ${timeout} ms exceeded`))
     }
 
     /**

@@ -39,6 +39,11 @@ export interface AxiosRequestConfig {
    * 返回类型
    */
   responseType?: XMLHttpRequestResponseType
+
+  /**
+   * 超时时间
+   */
+  timeout?: number
 }
 
 export interface AxiosResponse {
