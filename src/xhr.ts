@@ -30,7 +30,7 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
         headers: responseHeaders,
         data: responseData,
         status: request.status,
-        statusText: request.responseText,
+        statusText: request.statusText,
         config,
         request
       }
