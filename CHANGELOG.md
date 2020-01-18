@@ -1,3 +1,17 @@
+## [1.5.8](https://github.com/jason-live/jaxios/compare/v1.5.7...v1.5.8) (2020-01-18)
+
+
+### Bug Fixes
+
+* :bug: 处理上版本遗留问题 ([d70ca3f](https://github.com/jason-live/jaxios/commit/d70ca3fb38163efca76cf99403c825f237fdbbd2))
+
+
+### Features
+
+* :sparkles: 实现请求 headers 处理逻辑 ([072086d](https://github.com/jason-live/jaxios/commit/072086d2d26bee08700945a529dbaa118f438f19))
+
+
+
 ## [1.5.7](https://github.com/jason-live/jaxios/compare/v1.5.5...v1.5.7) (2020-01-18)
 
 
