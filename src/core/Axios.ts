@@ -38,21 +38,34 @@ export default class Axios {
   }
 
   patch(url: string, data?: any, config?: AxiosRequestConfig): AxiosPromise {
-    return this._requestMethodWithData(url, 'post', data, config)
+    return this._requestMethodWithData(url, 'patch', data, config)
   }
 
-  _requestMethodWithoutData(url: string, method: METHOD, config?: AxiosRequestConfig): AxiosPromise {
-    return this.request(Object.assign(config || {}, {
-      method: method,
-      url
-    }))
+  _requestMethodWithoutData(
+    url: string,
+    method: METHOD,
+    config?: AxiosRequestConfig
+  ): AxiosPromise {
+    return this.request(
+      Object.assign(config || {}, {
+        method: method,
+        url
+      })
+    )
   }
 
-  _requestMethodWithData(url: string, method: METHOD, data?: any, config?: AxiosRequestConfig): AxiosPromise {
-    return this.request(Object.assign(config || {}, {
-      method: method,
-      url,
-      data
-    }))
+  _requestMethodWithData(
+    url: string,
+    method: METHOD,
+    data?: any,
+    config?: AxiosRequestConfig
+  ): AxiosPromise {
+    return this.request(
+      Object.assign(config || {}, {
+        method: method,
+        url,
+        data
+      })
+    )
   }
 }
