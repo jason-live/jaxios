@@ -1,3 +1,7 @@
+## [1.6.4](https://github.com/jason-live/jaxios/compare/v1.6.2...v1.6.4) (2020-01-19)
+
+
+
 ## [1.6.2](https://github.com/jason-live/jaxios/compare/v1.5.12...v1.6.2) (2020-01-18)
 
 
