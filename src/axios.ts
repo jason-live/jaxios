@@ -16,4 +16,4 @@ function createInstance(): AxiosInstance {
 
 const axios = createInstance()
 
-export default axios;
+export default axios

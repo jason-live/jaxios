@@ -31,13 +31,13 @@ export function buildURL(url: string, params?: any): string {
   Object.keys(params).forEach((key) => {
     const val = params[key]
 
-    if(val === null || typeof val === 'undefined') {
+    if (val === null || typeof val === 'undefined') {
       return
     }
 
     let values = []
 
-    if(Array.isArray(val)) {
+    if (Array.isArray(val)) {
       values = val
       key += '[]'
     } else {
@@ -46,7 +46,7 @@ export function buildURL(url: string, params?: any): string {
 
     values.forEach((val) => {
       if (isData(val)) {
-        val = val.toISOString();
+        val = val.toISOString()
       } else if (isPlainObject(val)) {
         val = JSON.stringify((val))
       }
@@ -56,9 +56,9 @@ export function buildURL(url: string, params?: any): string {
 
   let serializedParams = parts.join('&')
 
-  if(serializedParams) {
+  if (serializedParams) {
     const markIndex = url.indexOf('#')
-    if(markIndex !== -1) {
+    if (markIndex !== -1) {
       url = url.slice(0, markIndex)
     }
     url += (url.indexOf('?') === -1 ? '?' : '&') + serializedParams

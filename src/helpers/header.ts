@@ -22,9 +22,9 @@ function normalizeHeaderName(headers: any, normalizedName: string): void {
  * @param data
  */
 export function processHeaders(headers: any, data: any): any {
-  normalizeHeaderName(headers, 'Content-Type');
+  normalizeHeaderName(headers, 'Content-Type')
   if (isPlainObject(data)) {
-    if (headers && !headers['Content-Type']){
+    if (headers && !headers['Content-Type']) {
       headers['Content-Type'] = 'application/json;charset=utf-8'
     }
   }
@@ -37,7 +37,7 @@ export function processHeaders(headers: any, data: any): any {
  */
 export function parseHeaders(headers: string): any {
   let parsed = Object.create(null)
-  if(!headers) return parsed
+  if (!headers) return parsed
 
   /**
    * 分解 headers 字符串

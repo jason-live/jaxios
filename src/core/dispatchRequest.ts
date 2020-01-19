@@ -37,7 +37,7 @@ function transformURL(config: AxiosRequestConfig): string {
  */
 function transformRequestData(config: AxiosRequestConfig): any {
   const { data } = config
-  return transformRequest(data);
+  return transformRequest(data)
 }
 
 /**
