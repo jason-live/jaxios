@@ -1,5 +1,11 @@
-import { AxiosPromise, AxiosRequestConfig, METHOD } from '../types'
+import { AxiosPromise, AxiosRequestConfig, AxiosResponse, METHOD } from '../types'
 import dispatchRequest from './dispatchRequest'
+import InterceptorManager from './InterceptorManager'
+
+interface Interceptors {
+  request: InterceptorManager<AxiosRequestConfig>
+  resopnse: InterceptorManager<AxiosResponse>
+}
 
 /**
  * Axios 混合对象
@@ -9,6 +15,15 @@ import dispatchRequest from './dispatchRequest'
  * @memberof Axios.ts
  */
 export default class Axios {
+  interceptors: Interceptors
+
+  constructor() {
+    this.interceptors = {
+      request: new InterceptorManager<AxiosRequestConfig>(),
+      resopnse: new InterceptorManager<AxiosResponse>()
+    }
+  }
+
   request(url: any, config?: any): AxiosPromise {
     if (typeof url === 'string') {
       if (!config) {
