@@ -1,3 +1,15 @@
+## [1.7.2](https://github.com/jason-live/jaxios/compare/v1.6.5...v1.7.2) (2020-01-19)
+
+
+### Features
+
+* :sparkles: 修改 AxiosRequestConfig url 参数为可选参数 ([85b7840](https://github.com/jason-live/jaxios/commit/85b7840fa6f84f932f840e51b3d0ebae22b2e70a))
+* :sparkles: 创建 Axios 对象 ([c316a2b](https://github.com/jason-live/jaxios/commit/c316a2bdb754df0961b1844f84849ee0d3989d70))
+* :sparkles: 声明 Axios 接口 ([b24944e](https://github.com/jason-live/jaxios/commit/b24944eac505e6d7cdc854bd8797f388f6b7236c))
+* :sparkles: 声明 AxiosInstance 接口 ([0910e47](https://github.com/jason-live/jaxios/commit/0910e478e99261a3a3daa52303b43c3091a45e72))
+
+
+
 ## [1.6.5](https://github.com/jason-live/jaxios/compare/v1.6.4...v1.6.5) (2020-01-19)
 
 
