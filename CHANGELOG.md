@@ -1,3 +1,15 @@
+## [1.8.2](https://github.com/jason-live/jaxios/compare/v1.7.5...v1.8.2) (2020-01-19)
+
+
+### Features
+
+* :art: 代码格式化 ([1d83851](https://github.com/jason-live/jaxios/commit/1d83851123b0cebd4477e9a7376fa70bae5fd124))
+* :sparkles: AxiosInterceptorManager 接口实现 ([793705b](https://github.com/jason-live/jaxios/commit/793705b9d2924b6d46045454afbb7edea8ecbcb1))
+* :sparkles: 初始化 Axios interceptors ([da5df07](https://github.com/jason-live/jaxios/commit/da5df0781fabc01663717c494e39d54404946dc2))
+* :sparkles: 拦截器管理类实现 ([c0745ae](https://github.com/jason-live/jaxios/commit/c0745ae29b4d2d1cba7baf0d1707e5ed25add882))
+
+
+
 ## [1.7.5](https://github.com/jason-live/jaxios/compare/v1.7.4...v1.7.5) (2020-01-19)
 
 
