@@ -1,3 +1,13 @@
+## [1.7.5](https://github.com/jason-live/jaxios/compare/v1.7.4...v1.7.5) (2020-01-19)
+
+
+### Features
+
+* :sparkles: demo 编写 ([8741c25](https://github.com/jason-live/jaxios/commit/8741c2597d80fbeaaf3dc942fd30bd47f7be9161))
+* :sparkles: 接口添加范型参数 ([3a1333b](https://github.com/jason-live/jaxios/commit/3a1333bb0afa0e1ca2788251a28b24f0eeee11f2))
+
+
+
 ## [1.7.4](https://github.com/jason-live/jaxios/compare/v1.7.3...v1.7.4) (2020-01-19)
 
 
