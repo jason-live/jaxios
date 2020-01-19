@@ -64,7 +64,7 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
     /**
      * 方法初始化请求
      */
-    request.open(method.toLowerCase(), url!, true)
+    request.open(method.toUpperCase(), url!, true)
 
     /**
      * 处理 headers
