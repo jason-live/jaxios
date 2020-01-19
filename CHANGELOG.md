@@ -1,3 +1,13 @@
+## [1.7.4](https://github.com/jason-live/jaxios/compare/v1.7.3...v1.7.4) (2020-01-19)
+
+
+### Features
+
+* :sparkles: demo 实现 ([a37950c](https://github.com/jason-live/jaxios/commit/a37950c7c892a6b91cbefb6541060948301a320c))
+* :sparkles: request 重载实现 ([9181005](https://github.com/jason-live/jaxios/commit/91810051d45547e2d96653c5f2c9b6f2608885cf))
+
+
+
 ## [1.7.3](https://github.com/jason-live/jaxios/compare/v1.7.2...v1.7.3) (2020-01-19)
 
 
