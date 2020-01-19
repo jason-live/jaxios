@@ -1,3 +1,12 @@
+## [1.6.5](https://github.com/jason-live/jaxios/compare/v1.6.4...v1.6.5) (2020-01-19)
+
+
+### Features
+
+* :sparkles: createError 函数应用 + 导出类型定义 ([a5e17c1](https://github.com/jason-live/jaxios/commit/a5e17c10a7b32ca70b9eb07e9f029bb6fc5bd1c1))
+
+
+
 ## [1.6.4](https://github.com/jason-live/jaxios/compare/v1.6.2...v1.6.4) (2020-01-19)
 
 
