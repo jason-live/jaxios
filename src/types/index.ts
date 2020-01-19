@@ -100,3 +100,7 @@ export interface Axios {
 
   patch(url: string, data?: any, config?: AxiosRequestConfig): AxiosPromise
 }
+
+export interface AxiosInstance extends Axios {
+  (config: AxiosRequestConfig): AxiosPromise
+}
