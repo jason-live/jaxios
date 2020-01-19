@@ -1,3 +1,19 @@
+## [1.7.3](https://github.com/jason-live/jaxios/compare/v1.7.2...v1.7.3) (2020-01-19)
+
+
+### Bug Fixes
+
+* :bug: 修复 patch 请求错误问题 ([1e23cb5](https://github.com/jason-live/jaxios/commit/1e23cb5080eb437f36616035fe7370d02681c2e7))
+
+
+### Features
+
+* :sparkles: demo 编写 ([aa155eb](https://github.com/jason-live/jaxios/commit/aa155ebdef93e374101aff5e64331081ca5d632f))
+* :sparkles: 创建 instance 实例 ([8f77467](https://github.com/jason-live/jaxios/commit/8f77467ff476388479611259a5ee1a52df2b90eb))
+* :sparkles: 新增 extend 工具函数 ([26db06b](https://github.com/jason-live/jaxios/commit/26db06bf7e282eeea41ab2693c5fb614b1133b6f))
+
+
+
 ## [1.7.2](https://github.com/jason-live/jaxios/compare/v1.6.5...v1.7.2) (2020-01-19)
 
 
