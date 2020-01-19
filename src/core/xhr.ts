@@ -1,6 +1,6 @@
-import { AxiosRequestConfig, AxiosPromise, AxiosResponse } from './types'
-import { parseHeaders } from './helpers/header'
-import { createError } from './helpers/error'
+import { AxiosRequestConfig, AxiosPromise, AxiosResponse } from '../types'
+import { parseHeaders } from '../helpers/header'
+import { createError } from '../helpers/error'
 
 export default function xhr(config: AxiosRequestConfig): AxiosPromise {
   return new Promise((resolve, reject) => {
@@ -17,7 +17,7 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
     /**
      * 设置 request 的 responseType 属性
      */
-    if(responseType) {
+    if (responseType) {
       request.responseType = responseType
     }
 
@@ -64,12 +64,12 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
     /**
      * 方法初始化请求
      */
-    request.open(method.toLowerCase(), url, true)
+    request.open(method.toLowerCase(), url!, true)
 
     /**
      * 处理 headers
      */
-    Object.keys(headers).forEach((name) => {
+    Object.keys(headers).forEach(name => {
       if (data === null && name.toLowerCase() === 'content-type') {
         delete headers[name]
       } else {
@@ -90,7 +90,15 @@ export default function xhr(config: AxiosRequestConfig): AxiosPromise {
       if (response.status >= 200 && response.status < 300) {
         resolve(response)
       } else {
-        reject(createError(`Request failed with status code ${response.status}`, config, null, request, response))
+        reject(
+          createError(
+            `Request failed with status code ${response.status}`,
+            config,
+            null,
+            request,
+            response
+          )
+        )
       }
     }
   })
