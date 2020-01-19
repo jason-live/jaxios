@@ -18,7 +18,7 @@ export interface AxiosRequestConfig {
   /**
    * 请求地址
    */
-  url: string
+  url?: string
   /**
    * 请求方式
    */
