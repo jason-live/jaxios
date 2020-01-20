@@ -1,3 +1,13 @@
+## [1.9.7](https://github.com/jason-live/jaxios/compare/v1.9.6...v1.9.7) (2020-01-20)
+
+
+### Features
+
+* :sparkles: demo 编写 ([a1d0b07](https://github.com/jason-live/jaxios/commit/a1d0b079ed2991c6596b132a35c5ee2760d267d6))
+* :sparkles: 初始化 AxiosStatic 接口 ([d752b15](https://github.com/jason-live/jaxios/commit/d752b151604bff0d25a15c12c7277bd25b6bf367))
+
+
+
 ## [1.9.6](https://github.com/jason-live/jaxios/compare/v1.9.5...v1.9.6) (2020-01-20)
 
 
