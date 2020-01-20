@@ -44,6 +44,8 @@ export interface AxiosRequestConfig {
    * 超时时间
    */
   timeout?: number
+
+  [propsName: string]: any
 }
 
 export interface AxiosResponse<T = any> {
