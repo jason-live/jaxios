@@ -7,6 +7,7 @@
  */
 
 import { AxiosRequestConfig } from '../types'
+import { deepMerge, isPlainObject } from '../helpers/util'
 
 const starts = Object.create(null)
 
@@ -31,6 +32,23 @@ function fromCustomValStrat(defaultVal: any, customVal: any): any {
 }
 
 /**
+ * 深拷贝来自 customConfig 函数
+ * @param defaultVal
+ * @param customVal
+ */
+function deepMergeStrat(defaultVal: any, customVal: any): any {
+  if (isPlainObject(customVal)) {
+    return deepMerge(defaultVal, customVal)
+  } else if( typeof customVal !== 'undefined') {
+    return customVal
+  } else if (isPlainObject(defaultVal)) {
+    return deepMerge(customVal)
+  } else if (typeof defaultVal !== 'undefined') {
+    return defaultVal
+  }
+}
+
+/**
  * 合并来自 customConfig 的 key 值数组
  */
 const stratKeysFromCustomVal = ['url', 'data', 'params']
@@ -40,6 +58,15 @@ const stratKeysFromCustomVal = ['url', 'data', 'params']
  */
 stratKeysFromCustomVal.forEach((key) => {
   starts[key] = fromCustomValStrat
+})
+
+/**
+ * 深拷贝 key 值数组
+ */
+const deepMergeVal = ['headers']
+
+deepMergeVal.forEach((key) => {
+  starts[key] = deepMergeStrat
 })
 
 /**
