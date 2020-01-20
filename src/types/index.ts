@@ -121,3 +121,4 @@ export interface ResolvedFn<T> {
 export interface RejectedFn {
   (error: any): any
 }
+

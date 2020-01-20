@@ -1,10 +1,25 @@
-import { AxiosPromise, AxiosRequestConfig, AxiosResponse, METHOD } from '../types'
+import {
+  AxiosPromise,
+  AxiosRequestConfig,
+  AxiosResponse,
+  METHOD,
+  RejectedFn,
+  ResolvedFn
+} from '../types'
 import dispatchRequest from './dispatchRequest'
 import InterceptorManager from './InterceptorManager'
 
 interface Interceptors {
   request: InterceptorManager<AxiosRequestConfig>
   resopnse: InterceptorManager<AxiosResponse>
+}
+
+/**
+ * promise 调用链元素类型
+ */
+interface PromiseChain<T> {
+  resolved: ResolvedFn<T> | ((config: AxiosRequestConfig) => AxiosPromise),
+  rejected?: RejectedFn
 }
 
 /**
@@ -33,6 +48,12 @@ export default class Axios {
     } else {
       config = url
     }
+
+    const chain: PromiseChain<any>[] = [{
+      resolved: dispatchRequest,
+      rejected: undefined
+    }]
+
     return dispatchRequest(config)
   }
 
