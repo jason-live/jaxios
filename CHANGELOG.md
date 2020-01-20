@@ -1,3 +1,18 @@
+## [1.9.4](https://github.com/jason-live/jaxios/compare/v1.9.3...v1.9.4) (2020-01-20)
+
+
+### Bug Fixes
+
+* :bug: 修复 defaults 中 Content-Type 错误 导致 请求参数 错误问题 ([fdb8642](https://github.com/jason-live/jaxios/commit/fdb8642e066efc9ce29a8018c70f0934c02813c7))
+
+
+### Features
+
+* :sparkles: demo编写 ([342b0d4](https://github.com/jason-live/jaxios/commit/342b0d4100c4efd3d33c659ed83ea5a4331acf8c))
+* :sparkles: 实现 flattenHeaders 函数 ([d0f3856](https://github.com/jason-live/jaxios/commit/d0f38568f2958f0890fe06beacd49b5dca681676))
+
+
+
 ## [1.9.3](https://github.com/jason-live/jaxios/compare/v1.9.2...v1.9.3) (2020-01-20)
 
 
