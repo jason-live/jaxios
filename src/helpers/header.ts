@@ -1,4 +1,5 @@
-import { isPlainObject } from './util'
+import { deepMerge, isPlainObject } from './util'
+import { METHOD } from '../types'
 
 /**
  * 将小写的转为大写
@@ -51,4 +52,20 @@ export function parseHeaders(headers: string): any {
   })
 
   return parsed
+}
+
+export function flattenHeaders(headers: any, method: METHOD): any {
+  if (!headers) {
+    return headers
+  }
+
+  headers = deepMerge(headers, headers[method], headers.common)
+
+  const deleteKeys = ['get', 'post', 'head', 'put', 'patch', 'common', 'options', 'delete']
+
+  deleteKeys.forEach((key) => {
+    delete headers[key]
+  })
+
+  return headers
 }
