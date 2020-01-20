@@ -8,6 +8,7 @@ import {
 } from '../types'
 import dispatchRequest from './dispatchRequest'
 import InterceptorManager from './InterceptorManager'
+import { which } from 'shelljs'
 
 interface Interceptors {
   request: InterceptorManager<AxiosRequestConfig>
@@ -62,7 +63,14 @@ export default class Axios {
       chain.push(interceptor)
     })
 
-    return dispatchRequest(config)
+    let promise = Promise.resolve(config)
+
+    while(chain.length){
+      const { resolved, rejected } = chain.shift()!
+      promise = promise.then(rejected, rejected)
+    }
+
+    return promise
   }
 
   get(url: string, config?: AxiosRequestConfig): AxiosPromise {
