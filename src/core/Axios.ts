@@ -12,7 +12,7 @@ import { which } from 'shelljs'
 
 interface Interceptors {
   request: InterceptorManager<AxiosRequestConfig>
-  resopnse: InterceptorManager<AxiosResponse>
+  response: InterceptorManager<AxiosResponse>
 }
 
 /**
@@ -36,7 +36,7 @@ export default class Axios {
   constructor() {
     this.interceptors = {
       request: new InterceptorManager<AxiosRequestConfig>(),
-      resopnse: new InterceptorManager<AxiosResponse>()
+      response: new InterceptorManager<AxiosResponse>()
     }
   }
 
@@ -59,7 +59,7 @@ export default class Axios {
       chain.unshift(interceptor)
     })
 
-    this.interceptors.resopnse.forEach(interceptor => {
+    this.interceptors.response.forEach(interceptor => {
       chain.push(interceptor)
     })
 
@@ -67,7 +67,7 @@ export default class Axios {
 
     while (chain.length) {
       const { resolved, rejected } = chain.shift()!
-      promise = promise.then(rejected, rejected)
+      promise = promise.then(resolved, rejected)
     }
 
     return promise
