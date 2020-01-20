@@ -42,7 +42,7 @@ function deepMergeStrat(defaultVal: any, customVal: any): any {
   } else if( typeof customVal !== 'undefined') {
     return customVal
   } else if (isPlainObject(defaultVal)) {
-    return deepMerge(customVal)
+    return deepMerge(defaultVal)
   } else if (typeof defaultVal !== 'undefined') {
     return defaultVal
   }

@@ -45,10 +45,10 @@ export interface AxiosRequestConfig {
    */
   timeout?: number
 
-  [propsName: string]: any
-
   transformRequest?: AxiosTransformer | AxiosTransformer[]
   transformResponse?: AxiosTransformer | AxiosTransformer[]
+
+  [propsName: string]: any
 }
 
 export interface AxiosResponse<T = any> {

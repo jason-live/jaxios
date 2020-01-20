@@ -9,7 +9,6 @@ export default function transform(data: any, headers: any, fns?: AxiosTransforme
   }
   fns.forEach((fn) => {
     data = fn(data, headers)
-    console.log(fn, data)
   })
 
   return data

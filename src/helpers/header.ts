@@ -23,7 +23,6 @@ function normalizeHeaderName(headers: any, normalizedName: string): void {
  * @param data
  */
 export function processHeaders(headers: any, data: any): any {
-  console.log(data)
   normalizeHeaderName(headers, 'Content-Type')
   if (isPlainObject(data)) {
     if (headers && !headers['Content-Type']) {

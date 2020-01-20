@@ -3,6 +3,7 @@ import { parseHeaders } from '../helpers/header'
 import { createError } from '../helpers/error'
 
 export default function xhr(config: AxiosRequestConfig): AxiosPromise {
+  console.log(config)
   return new Promise((resolve, reject) => {
     /**
      * 结构 config 参数
