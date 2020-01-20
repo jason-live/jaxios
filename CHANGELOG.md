@@ -1,3 +1,12 @@
+## [1.9.3](https://github.com/jason-live/jaxios/compare/v1.9.2...v1.9.3) (2020-01-20)
+
+
+### Features
+
+* :sparkles: 合并策略下 ([9a0669d](https://github.com/jason-live/jaxios/commit/9a0669dd507076f0e494b7b1bc9106b54e587046))
+
+
+
 ## [1.9.2](https://github.com/jason-live/jaxios/compare/v1.9.1...v1.9.2) (2020-01-20)
 
 
