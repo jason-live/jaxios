@@ -1,3 +1,12 @@
+## [1.9.2](https://github.com/jason-live/jaxios/compare/v1.9.1...v1.9.2) (2020-01-20)
+
+
+### Features
+
+* :sparkles: 新增 config 合并函数 ([6f67645](https://github.com/jason-live/jaxios/commit/6f67645490394e1719db181cc74278c89261cb7d))
+
+
+
 ## [1.9.1](https://github.com/jason-live/jaxios/compare/v1.8.4...v1.9.1) (2020-01-20)
 
 
