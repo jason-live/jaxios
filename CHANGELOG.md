@@ -1,3 +1,18 @@
+## [1.8.4](https://github.com/jason-live/jaxios/compare/v1.8.3...v1.8.4) (2020-01-20)
+
+
+### Bug Fixes
+
+* :bug: 修复 Axios 接口 interceptors 未声明问题 ([9ee689a](https://github.com/jason-live/jaxios/commit/9ee689a60fff3a542dad1411d68abe2e075d6793))
+* :bug: 修复 请求发送失败 bug ([9f7875c](https://github.com/jason-live/jaxios/commit/9f7875c6d70f0032deb5676422d1bda0a301d601))
+
+
+### Features
+
+* :sparkles: demo 实现 ([e9183b3](https://github.com/jason-live/jaxios/commit/e9183b37f008ce787f635eabb3e818c3b124ec51))
+
+
+
 ## [1.8.3](https://github.com/jason-live/jaxios/compare/v1.8.2...v1.8.3) (2020-01-20)
 
 
