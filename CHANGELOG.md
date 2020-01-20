@@ -1,3 +1,17 @@
+## [1.9.6](https://github.com/jason-live/jaxios/compare/v1.9.5...v1.9.6) (2020-01-20)
+
+
+### Bug Fixes
+
+* :bug: 修复 自定义 headers 为空时，默认 headers 无效问题 ([c36ede1](https://github.com/jason-live/jaxios/commit/c36ede13e950f0720ec14dac03004a6ff3667d9d))
+
+
+### Features
+
+* :sparkles: 请求和响应配置化- transform 逻辑重构 + demo 编写 ([bc33fb4](https://github.com/jason-live/jaxios/commit/bc33fb46922b91b10f0546f4f2ae44f280f6ef9a))
+
+
+
 ## [1.9.5](https://github.com/jason-live/jaxios/compare/v1.9.4...v1.9.5) (2020-01-20)
 
 
