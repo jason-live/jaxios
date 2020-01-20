@@ -1,3 +1,12 @@
+## [1.9.5](https://github.com/jason-live/jaxios/compare/v1.9.4...v1.9.5) (2020-01-20)
+
+
+### Features
+
+* :sparkles: 修改默认配置 ([5d5a446](https://github.com/jason-live/jaxios/commit/5d5a446a64049d097ad6039cdffc5bfdd01543c9))
+
+
+
 ## [1.9.4](https://github.com/jason-live/jaxios/compare/v1.9.3...v1.9.4) (2020-01-20)
 
 
