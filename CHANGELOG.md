@@ -3,6 +3,18 @@
 
 ### Features
 
+* :bug: 格式化代码 ([28fa08a](https://github.com/jason-live/jaxios/commit/28fa08a739b507eab72b92e08b62d1dd39508dc2))
+* :sparkles: 向调用链添加 拦截器 ([98a3dca](https://github.com/jason-live/jaxios/commit/98a3dcaad248414e92407af96992aeb0efa0fd9a))
+* :sparkles: 声明 promise 调用链 chain ([f8d354e](https://github.com/jason-live/jaxios/commit/f8d354e4419b5bf8deaf1030fd6c1284870ef9b8))
+* :sparkles: 执行 chain 链 ([b5b4776](https://github.com/jason-live/jaxios/commit/b5b477607db1f57e5ec88b2fd3fdeee747c41a90))
+
+
+
+## [1.8.3](https://github.com/jason-live/jaxios/compare/v1.8.2...v1.8.3) (2020-01-20)
+
+
+### Features
+
 * :sparkles: 向调用链添加 拦截器 ([98a3dca](https://github.com/jason-live/jaxios/commit/98a3dcaad248414e92407af96992aeb0efa0fd9a))
 * :sparkles: 声明 promise 调用链 chain ([f8d354e](https://github.com/jason-live/jaxios/commit/f8d354e4419b5bf8deaf1030fd6c1284870ef9b8))
 * :sparkles: 执行 chain 链 ([b5b4776](https://github.com/jason-live/jaxios/commit/b5b477607db1f57e5ec88b2fd3fdeee747c41a90))
