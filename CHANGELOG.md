@@ -1,3 +1,14 @@
+## [1.9.1](https://github.com/jason-live/jaxios/compare/v1.8.4...v1.9.1) (2020-01-20)
+
+
+### Features
+
+* :sparkles: 实现默认配置初始化 ([0f64805](https://github.com/jason-live/jaxios/commit/0f64805794768bf10f2bbdc4ed8eb09bc59099d7))
+* :sparkles: 添加 Axios defaults 属性 ([f63cea2](https://github.com/jason-live/jaxios/commit/f63cea24a6243211bff7b8810461876f49791db2))
+* :sparkles: 默认配置编写 ([a506de5](https://github.com/jason-live/jaxios/commit/a506de5c1bb67f5831035efe64e273b713331c23))
+
+
+
 ## [1.8.4](https://github.com/jason-live/jaxios/compare/v1.8.3...v1.8.4) (2020-01-20)
 
 
