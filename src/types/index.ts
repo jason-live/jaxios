@@ -47,8 +47,8 @@ export interface AxiosRequestConfig {
 
   [propsName: string]: any
 
-  transformRequest: AxiosTransformer | AxiosTransformer[]
-  transformResponse: AxiosTransformer | AxiosTransformer[]
+  transformRequest?: AxiosTransformer | AxiosTransformer[]
+  transformResponse?: AxiosTransformer | AxiosTransformer[]
 }
 
 export interface AxiosResponse<T = any> {
