@@ -48,6 +48,8 @@ export interface AxiosRequestConfig {
   transformRequest?: AxiosTransformer | AxiosTransformer[]
   transformResponse?: AxiosTransformer | AxiosTransformer[]
 
+  cancelToken?: CancelToken
+
   [propsName: string]: any
 }
 
@@ -142,3 +144,15 @@ export interface AxiosTransformer {
   (data: any, headers?: any): any
 }
 
+export interface CancelToken {
+  promise: Promise<string>
+  renson?: string
+}
+
+export interface Canceler {
+  (message: string): void
+}
+
+export interface CancelExecutor {
+  (cancel: Canceler): void
+}
