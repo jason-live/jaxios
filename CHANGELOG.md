@@ -1,3 +1,12 @@
+## [1.10.4](https://github.com/jason-live/jaxios/compare/v1.10.3...v1.10.4) (2020-02-04)
+
+
+### Features
+
+* :sparkles: demo 实现 ([d9106dd](https://github.com/jason-live/jaxios/commit/d9106dd693764ff092021033030957e183d37515))
+
+
+
 ## [1.10.3](https://github.com/jason-live/jaxios/compare/v1.10.2...v1.10.3) (2020-02-04)
 
 
