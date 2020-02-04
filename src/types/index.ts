@@ -1,5 +1,5 @@
 export type METHOD =
-  'get'
+  | 'get'
   | 'GET'
   | 'post'
   | 'POST'
@@ -80,20 +80,19 @@ export interface AxiosResponse<T = any> {
   headers: any
 }
 
-export interface AxiosPromise<T = any> extends Promise<AxiosResponse<T>> {
-}
+export interface AxiosPromise<T = any> extends Promise<AxiosResponse<T>> {}
 
 export interface AxiosError extends Error {
-  config: AxiosRequestConfig,
-  code?: string,
-  request?: any,
-  response?: AxiosResponse,
+  config: AxiosRequestConfig
+  code?: string
+  request?: any
+  response?: AxiosResponse
   isAxiosError: boolean
 }
 
 export interface Axios {
   interceptors: {
-    request: AxiosInterceptorManager<AxiosRequestConfig>,
+    request: AxiosInterceptorManager<AxiosRequestConfig>
     response: AxiosInterceptorManager<AxiosResponse>
   }
 
@@ -122,7 +121,7 @@ export interface AxiosInstance extends Axios {
   <T = any>(url: string, config?: AxiosRequestConfig): AxiosPromise<T>
 }
 
-export interface AxiosStatic extends AxiosInstance{
+export interface AxiosStatic extends AxiosInstance {
   create(config?: AxiosRequestConfig): AxiosInstance
 }
 
@@ -163,6 +162,14 @@ export interface CancelTokenSource {
 }
 
 export interface CancelTokenStatic {
-  new(executor: CancelExecutor): CancelToken
+  new (executor: CancelExecutor): CancelToken
   source(): CancelTokenSource
+}
+
+export interface Cancel {
+  message?: string
+}
+
+export interface CancelStatic {
+  new (message?: string): Cancel
 }
