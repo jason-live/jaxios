@@ -1,3 +1,16 @@
+## [1.10.2](https://github.com/jason-live/jaxios/compare/v1.9.7...v1.10.2) (2020-02-04)
+
+
+### Features
+
+* :sparkles: CancelToken 相关接口定义 ([ee41545](https://github.com/jason-live/jaxios/commit/ee41545e38be332f55bf5edd734e70ee8d4216d5))
+* :sparkles: 实现 source 静态函数 ([bddc988](https://github.com/jason-live/jaxios/commit/bddc98878244ee8ae472a65ec087b43a1cde275e))
+* :sparkles: 实现 xhr 中 cancelToken ([59ad119](https://github.com/jason-live/jaxios/commit/59ad1199586b0918d9e28102e7de5c4a08401a04))
+* :sparkles: 新增 CancelToken 类 ([8b04cc4](https://github.com/jason-live/jaxios/commit/8b04cc4ca703281c5c9cfa32fa7b110ec5164c31))
+* :sparkles: 新增 CancelTokenSource 接口定义 ([6d206d9](https://github.com/jason-live/jaxios/commit/6d206d9953241221a424e45a6cb428f5b49a48cc))
+
+
+
 ## [1.9.7](https://github.com/jason-live/jaxios/compare/v1.9.6...v1.9.7) (2020-01-20)
 
 
