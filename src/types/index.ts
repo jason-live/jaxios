@@ -150,6 +150,8 @@ export interface AxiosTransformer {
 export interface CancelToken {
   promise: Promise<Cancel>
   renson?: Cancel
+
+  throwIfRequested(): void
 }
 
 export interface Canceler {
