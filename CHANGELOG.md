@@ -1,3 +1,17 @@
+## [1.10.3](https://github.com/jason-live/jaxios/compare/v1.10.2...v1.10.3) (2020-02-04)
+
+
+### Features
+
+* :sparkles: Cancel 接口定义 ([ace9568](https://github.com/jason-live/jaxios/commit/ace956836408f74bf10340482258dfbc04930401))
+* :sparkles: 修改 reason 类型 ([5d2dba9](https://github.com/jason-live/jaxios/commit/5d2dba9aaf4dc5069ecfc3154d6b99af3d569260))
+* :sparkles: 实现 Cancel 类 和 isCancel 函数 ([ab15636](https://github.com/jason-live/jaxios/commit/ab156364bbe579943dca2088f655d80bc1dbf4d2))
+* :sparkles: 扩展 axios 实例 ([e7b1994](https://github.com/jason-live/jaxios/commit/e7b1994899881d1b3690ca49e30132e8abf73ec0))
+* :sparkles: 扩展 AxiosStatic 接口 ([3c4b786](https://github.com/jason-live/jaxios/commit/3c4b786075e09a9b17e4f85ba06002761627d303))
+* :sparkles: 新增 throwIfRequested 逻辑 ([8b748be](https://github.com/jason-live/jaxios/commit/8b748bea830239d497f9d67c0a2fc8c207b167b3))
+
+
+
 ## [1.10.2](https://github.com/jason-live/jaxios/compare/v1.9.7...v1.10.2) (2020-02-04)
 
 
