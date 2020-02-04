@@ -148,8 +148,8 @@ export interface AxiosTransformer {
 }
 
 export interface CancelToken {
-  promise: Promise<string>
-  renson?: string
+  promise: Promise<Cancel>
+  renson?: Cancel
 }
 
 export interface Canceler {
